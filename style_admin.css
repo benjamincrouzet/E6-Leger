@@ -1,0 +1,224 @@
+/* Styles de base */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f7fa; /* Fond clair pour une bonne visibilité */
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+h1, h2 {
+    color: #333;
+    font-weight: bold;
+}
+
+/* Page principale du tableau de bord */
+.admin-page {
+    padding: 20px;
+}
+
+h1 {
+    font-size: 36px;
+    color: #007BFF; /* Bleu pour l'en-tête principal */
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+h2 {
+    font-size: 24px;
+    color: #007BFF;
+    margin-bottom: 30px;
+}
+
+/* Section des tables */
+.table-section {
+    margin-bottom: 40px;
+}
+
+.table-section h3 {
+    font-size: 20px;
+    color: #444;
+    margin-top: 20px;
+    text-align: center;
+}
+
+/* Table */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+table th, table td {
+    padding: 12px 20px;
+    text-align: left;
+    border: 1px solid #ddd;
+}
+
+table th {
+    background-color: #007BFF; /* Bleu pour l'en-tête de table */
+    color: white;
+    font-weight: bold;
+}
+
+table td {
+    background-color: #ffffff; /* Fond clair pour les données */
+}
+
+table tr:nth-child(even) td {
+    background-color: #f9f9f9; /* Ligne alternée grise pour mieux distinguer les données */
+}
+
+/* Actions */
+.actions a {
+    padding: 8px 12px;
+    background-color: #28a745; /* Vert pour les actions de modification */
+    color: white;
+    text-decoration: none;
+    border-radius: 4px;
+    margin-right: 10px;
+    transition: background 0.3s ease;
+}
+
+.actions a:hover {
+    background-color: #218838; /* Vert plus foncé au survol */
+}
+
+.actions a.delete {
+    background-color: #dc3545; /* Rouge pour l'action de suppression */
+}
+
+.actions a.delete:hover {
+    background-color: #c82333; /* Rouge foncé au survol */
+}
+
+/* Ajout d'un nouvel enregistrement */
+.add-record {
+    display: block;
+    text-align: center;
+    margin-top: 30px;
+}
+
+.add-record a {
+    padding: 12px 20px;
+    background-color: #007BFF;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: bold;
+    transition: background 0.3s ease;
+}
+
+.add-record a:hover {
+    background-color: #0056b3;
+}
+
+/* Déconnexion */
+.logout-button {
+    display: block;
+    margin: 40px auto;
+    padding: 12px 24px;
+    font-size: 16px;
+    background-color: #e53935;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.logout-button:hover {
+    background-color: #c62828;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+    table th, table td {
+        padding: 10px;
+    }
+
+    .actions a {
+        font-size: 14px;
+        padding: 6px 10px;
+    }
+
+    .logout-button {
+        width: 100%;
+        padding: 14px;
+    }
+
+    .add-record a {
+        width: 100%;
+        padding: 14px;
+        font-size: 18px;
+    }
+
+    h1 {
+        font-size: 28px;
+    }
+
+    h2 {
+        font-size: 20px;
+    }
+
+    .table-section h3 {
+        font-size: 18px;
+    }
+}
+
+/* Actions */
+.actions {
+    display: flex;
+    gap: 10px; /* Espacement entre les boutons */
+    justify-content: center; /* Centrer les actions */
+}
+
+.actions a {
+    padding: 8px 12px;
+    background-color: #28a745; /* Vert pour modifier */
+    color: white;
+    text-decoration: none;
+    border-radius: 4px;
+    transition: background 0.3s ease;
+    text-align: center;
+    width: 120px; /* Largeur fixe pour éviter la superposition */
+}
+
+.actions a:hover {
+    background-color: #218838;
+}
+
+.actions a.delete {
+    background-color: #dc3545; /* Rouge pour supprimer */
+}
+
+.actions a.delete:hover {
+    background-color: #c82333;
+}
+
+/* Ajout d'un nouvel enregistrement */
+.add-record {
+    display: inline-block;
+    margin-top: 20px;
+    text-align: center;
+}
+
+.add-record a {
+    padding: 12px 20px;
+    background-color: #007BFF;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: bold;
+    transition: background 0.3s ease;
+    display: inline-block;
+    width: auto;
+}
+
+.add-record a:hover {
+    background-color: #0056b3;
+}
+
